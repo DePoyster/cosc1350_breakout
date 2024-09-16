@@ -1,3 +1,11 @@
+From Wikipedia, the free encyclopedia:
+
+"Breakout is an arcade video game developed and published by Atari, Inc. and released on May 13, 1976. It was designed by Steve Wozniak, based on conceptualization from Nolan Bushnell and Steve Bristow, who were influenced by the seminal 1972 Atari arcade game Pong. In Breakout, a layer of bricks lines the top third of the screen and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. The arcade game was released in Japan by Namco. Breakout was a worldwide commercial success, among the top five highest-grossing arcade video games of 1976 in both the United States and Japan and then among the top three highest-grossing arcade video games of 1977 in the US and Japan. The 1978 Atari VCS port uses color graphics instead of a monochrome screen with colored overlay."
+
+<a src=https://elgoog.im/breakout/>Here</a> is a free online version of the game that I like to play. This is based off of when
+Google had an easter egg where when you searched "Atari Breakout" images, the browser would
+automatically pull up this game.
+
 # Breakout Game TODO
 
 First, load up the web page as it is right now, and read the existing code. 
