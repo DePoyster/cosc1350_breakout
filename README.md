@@ -1,21 +1,16 @@
-From Wikipedia, the free encyclopedia:
-
-"Breakout is an arcade video game developed and published by Atari, Inc. and released on May 13, 1976. It was designed by Steve Wozniak, based on conceptualization from Nolan Bushnell and Steve Bristow, who were influenced by the seminal 1972 Atari arcade game Pong. In Breakout, a layer of bricks lines the top third of the screen, and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. The arcade game was released in Japan by Namco. Breakout was a worldwide commercial success, among the top five highest-grossing arcade video games of 1976 in both the United States and Japan and then among the top three highest-grossing arcade video games of 1977 in the US and Japan. The 1978 Atari VCS port uses color graphics instead of a monochrome screen with colored overlay."
+Breakout is an arcade game where a layer of bricks lines the top third of the screen, and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. 
 
 Here is a free online version of the game to play so you can get a feel of what the finished product should look like: https://elgoog.im/breakout/
 
 This is based on when Google had an easter egg where the browser automatically pulled up this game when you searched "Atari Breakout" images.
 
-# Breakout Game TODO
+# Module 13: Breakout Game Part 1
 
-First, load up the web page as it is right now, and read the existing code. 
-Familiarize yourself with everything, and ask questions about what is going on 
-before you spend too much time lost. This is a big project, and each student is expected to spend some time talking to the instructor.
+First, load up the web page as it is right now, and read the existing code. Familiarize yourself with everything, and ask questions about what is going on before you spend too much time lost. This is a big project, and each student is expected to spend some time talking to the instructor.
 
 ## Make the web page look more appealing
 
-Before getting too far into the hard stuff, it would be nice if what you're
-working on is not a complete eyesore. 
+Before getting too far into the hard stuff, it would be nice if what you're working on is not a complete eyesore. 
 
 1. Label the breakout game with a header. 
 
@@ -31,9 +26,9 @@ working on is not a complete eyesore.
 
 4. Uncomment the lines of code in the draw function to make the ball's position change.
 
-5. Check if the ball hits the width of the canvas element. If so, negate the xMoveDist.
+5. Bounce the ball off the wall by comparing xPos and the boundries of the game, and negating xMoveDist.
 
-*hint: if(xPos >= canvas.width) xMoveDist = -xMoveDist;*
+*hint: if(xPos > canvas.width - ballRadius) xMoveDist = -xMoveDist;*
 
 6. Do the same for the height of the canvas element and the yMoveDist.
 
@@ -43,11 +38,14 @@ working on is not a complete eyesore.
 
 7. Create a new function that draws a 15x100px rectangle at the bottom center of the canvas.
 
-8. Add an event listner to the DOM for a "keydown" event........
-9. 
-^^^^Here is where I'm at for formal finished stuff. but basically after this the steps are
+*Feel free to use ctx.fillStyle to color your paddle and ball differently*
 
--add key up event for paddle 
+8. add keydown and keyup event listeners to the DOM, and create two new functions for each event. Create two boolean variables called moveLeft and moveRight that are true when their respecitve key is down, and false when it is up.
+
+9. Change the paddles drawn x position to be a variable instead, and in the draw function, check if moveLeft or moveRight is true. This is where you adjust the x position of the paddle to 
+
+
+# Module 14: Breakout Game Part 2
 
 -modify the ball's code to collide with the paddle
 

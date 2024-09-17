@@ -1,4 +1,5 @@
 /* ..:: B R E A K O U T   G A M E ::..
+ *
  * breakout.js
  * Author: Joe DePoyster
  * Date: 2024-9-16
@@ -51,7 +52,6 @@ draw=()=> {
   //uncomment when you're ready to send the ball flying!
   // xPos += xMoveDist;
   // yPos += yMoveDist;
-   
 };
 
 /*
