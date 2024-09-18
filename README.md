@@ -1,4 +1,4 @@
-Breakout is an arcade game where a layer of bricks lines the top third of the screen, and the goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. 
+Breakout is an arcade game in which a layer of bricks lines the top third of the screen. The goal is to destroy them all by repeatedly bouncing a ball off a paddle into them. 
 
 Here is a free online version of the game to play so you can get a feel of what the finished product should look like: https://elgoog.im/breakout/
 
@@ -26,7 +26,7 @@ Before getting too far into the hard stuff, it would be nice if what you're work
 
 4. Uncomment the lines of code in the draw function to make the ball's position change.
 
-5. Bounce the ball off the wall by comparing xPos and the boundries of the game, and negating xMoveDist.
+5. Bounce the ball off the wall by comparing xPos and the boundaries of the game, and negating xMoveDist.
 
 *hint: if(xPos > canvas.width - ballRadius) xMoveDist = -xMoveDist;*
 
@@ -40,17 +40,17 @@ Before getting too far into the hard stuff, it would be nice if what you're work
 
 *Feel free to use ctx.fillStyle to color your paddle and ball differently*
 
-8. add keydown and keyup event listeners to the DOM, and create two new functions for each event. Create two boolean variables called moveLeft and moveRight that are true when their respecitve key is down, and false when it is up.
+8. add keydown and keyup event listeners to the DOM, and create two new functions for each event. Create two boolean variables called moveLeft and moveRight that are true when their respective key is down, and false when it is up.
 
 9. Change the paddles drawn x position to be a variable instead named xPaddle, and in the draw function check if moveLeft or moveRight is true, and adjust the xPaddle by 3 in the appropriate direction.
 
 *You should now have a paddle that can move left and right! Make sure you don't allow for the paddle to move off the screen as well.*
 
-Before submitting the assignment, double check that you have updated the name and date at the top of the source code files, and have replaced my comments with comments that are meaningful to you. 
+Before submitting the assignment, double-check that you have updated the name and date at the top of the source code files, and have replaced my comments with your own.  
 
 # Module 14: Breakout Game Part 2
 
-Now, it is time to line the top of the game with bricks. It is easiest to manage the bricks by defining them as objects with an x position, y position, and hit status. Then, you can use an array to hold your brick objects, and iterate through that array to draw them on the canvas element. After doing that, we will be ready to add collision detection to the game. 
+Now, it is time to line the top of the game with bricks. It is easiest to manage the bricks by defining them as objects with an x position, y position, and hit status. Then, you can use an array to hold your brick objects and iterate through that array to draw them on the canvas element. After doing that, we will be ready to add collision detection to the game. 
 
 ## Define the bricks
 
@@ -72,7 +72,7 @@ Now, it is time to line the top of the game with bricks. It is easiest to manage
 
 5. Go back and edit the brick drawing function to check whether the hit status of the brick indicates to draw the brick or not.
 
-*Notice that the ball only bounces off of the brick if it hasn't been hit yet. Once the brick is hit, it should be invisible and not cause the ball to bounce off of it anymore. The bricks should now be falling victim to the entropy of the ball*
+*Notice that the ball only bounces off of the brick if it hasn't been hit yet. Once the brick is hit, it should be invisible and not cause the ball to bounce off it anymore. The bricks should now be falling victim to the entropy of the ball*
 
 6. Add collision detection to the paddle by modifying the bottom wall of the game's logic in the draw function. 
 
@@ -80,7 +80,7 @@ Now, it is time to line the top of the game with bricks. It is easiest to manage
 
 # Module 15: Breakout Game Part 3
 
--Surprise! Use this week to get caught up with what you havn't got done yet. 
+-Surprise! Use this week to get caught up with what you haven't got done yet. (Maybe?)
 -add javascript to keep score
--add reset button to the DOM that calls a function that resets the game
+-add a reset button to the DOM that calls a function that resets the game
 
