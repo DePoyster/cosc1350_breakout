@@ -38,13 +38,13 @@ Before getting too far into the hard stuff, it would be nice if what you're work
 
 7. Create a new function that draws a 100x15px rectangle at the bottom center of the canvas.
 
-*Feel free to use ctx.fillStyle to color your paddle and ball differently*
+*Feel free to use ctx.fillStyle to color your paddle and ball differently!*
 
-8. add keydown and keyup event listeners to the DOM, and create two new functions for each event. Create two boolean variables called moveLeft and moveRight that are true when their respective key is down, and false when it is up.
+8. add keydown and keyup event listeners to the DOM, and create two new listener functions for each event. Create two boolean variables called moveLeft and moveRight that are true when their respective key is down, and false when it is up.
 
-9. Change the paddles drawn x position to be a variable instead named xPaddle, and in the draw function check if moveLeft or moveRight is true, and adjust the xPaddle by 3 in the appropriate direction.
+9. Change the paddles drawn x position to be a variable instead of a hard-coded value. Name this variable xPaddle, and in the draw function check if moveLeft or moveRight is true, and adjust the xPaddle by 3 in the appropriate direction.
 
-*You should now have a paddle that can move left and right! Make sure you don't allow for the paddle to move off the screen as well.*
+*Remember that the draw function is constantly being called, which is how simple if statements are enough to check for changes in the game state. You should now have a paddle that can move left and right. Make sure you don't allow for the paddle to move off the screen.*
 
 Before submitting the assignment, double-check that you have updated the name and date at the top of the source code files, and have replaced my comments with your own.  
 
@@ -54,13 +54,13 @@ Now, it is time to line the top of the game with bricks. It is easiest to manage
 
 ## Define the bricks
 
-1. Define values for the bricks. For this version of breakout, we will have 4 rows and 6 columns of 90x25px bricks. Allow for a 40px space from the top of the game and the top of the brick row. 
+1. Define values for the bricks. For this version of breakout, we will have 4 rows and 6 columns of 90x25px bricks. Allow for a 40px space between the ceiling of the canvas element and the top of the brick row. 
 
 * To nicely align the bricks, they should be padded 5px away from the walls, and 10px away from each other. Therefore, your values should be brickRows=6, brickColumns=4, brickWidth=75, brickHeight=20, brickPadding=10, brickTopOffset=40, brickLeftOffset=5. 
 
 2. Define the array of brick objects.
 
-*This is easiest done with two for loops: one to iterate through the rows, and another nested loop to iterate through the columns. Then, you can use which row or column your brick is at to calculate the xy position of the brick.  *
+*This is easiest done with two for loops: one to iterate through the rows, and another nested loop to iterate through the columns. Then, you can use which row or column your brick is at, and accordingly calculate and store the xy position.  *
 
 3. Draw the bricks on the canvas element.
 
